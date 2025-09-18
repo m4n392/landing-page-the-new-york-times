@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /*colores de la marca*/ 
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    --gris: #e6e6e6;
+
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 24px;   
+
+}
+
+.encabezado a {
+    text-decoration: none;
+    flex: 0 0 auto;
+}
+
+.encabezado .fa-bars {
+    font-size: 20px;
+    color: var(--negro);
+    margin-right: 15px; 
+    padding-left: 40px;
+}
+
+.encabezado .fa-user {
+    font-size: 20px;
+    color: var(--negro);
+    margin-left: 20px; 
+    padding-right: 40px;
+}
+
+.encabezado img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.fecha {
+    background-color: var(--gris);
+    color: #666666; 
+    font-family: 'Noto Sans Georgian', sans-serif;
+    padding: 1px 4px;
+    font-size: 0.85em;
+    margin: 20px 0;
+    border-radius: 4px;
+    width: 100vw;         
+    box-sizing: border-box; 
+    position: relative;     
+    left: 52%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.noticia.principal {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.noticia.principal h2 {
+    font-size: 32px; 
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 35px;
+}
+
+.noticia.principal p {
+    color: #666666;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}   
+
+.descripcion {
+    text-align: right;
+    margin-top: 4px;
+    font-size: 12px;
+    width: 415px;         
+    box-sizing: border-box;
+
+}
+.subtitulo-negro {
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--negro);
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    text-align: left;
+}
+
+.noticia-secundaria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.columna-titulo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitulo-secundario {
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--negro);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    text-align: left;
+}
+
+.min-read {
+    font-family: 'Noto Sans', sans-serif;
+    color: #666666;
+    font-size: 0.95em;
+    margin: 0;
+    text-align: left;
+}
+
+.imagen-secundaria {
+    width: 120px;
+    height: auto;
+
+}
+
+.cuadro {
+      position: relative;
+      animation: scroll 3s infinite;
+    }
+
+    @keyframes scroll {
+      from { left: 0; }
+      to { left: 300px; }
+    }
